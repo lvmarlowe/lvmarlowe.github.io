@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content=" Reservations page for Pacific Trails Resort. Set a reservation at a luxurious resort in California."
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pacific Trails Resort :: Reservations</title>
+    <link rel="stylesheet" href="pacific.css" />
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Completed files -->
+  </head>
+
+  <body>
+    <!--I changed the div to a section-->
+    <section id="wrapper">
+      <header>
+        <h1>Pacific Trails Resort</h1>
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="yurts.html">Yurts</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="lost.html">Lost?</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <h2>Reservations at Pacific Trails</h2>
+
+        <form
+          method="post"
+          action="http://webdevbasics.net/scripts/pacific.php"
+        >
+          <h3>Contact Us</h3>
+
+          <p>
+            Required information is marked with an asterisk (
+
+            <!-- I added an aria-label here per 
+            https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form.
+            The validator says it is possible misuse, but mdn web docs recommends it for accessibility.
+          -->
+            <strong><span aria-label="required">*</span></strong>
+            ).
+          </p>
+
+          <section>
+            <h4>Contact information</h4>
+            <p>
+              <label for="myFName">
+                <!-- I added an aria-label here per 
+                  https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form.
+                  The validator says it is possible misuse, but mdn web docs recommends it for accessibility.
+                -->
+                <strong><span aria-label="required">*</span></strong>
+                <span>First Name:</span>
+              </label>
+              <input
+                type="text"
+                name="myFName"
+                id="myFName"
+                required="required"
+              />
+            </p>
+
+            <p>
+              <label for="myLName">
+                <!-- I added an aria-label here per 
+                  https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form.
+                  The validator says it is possible misuse, but mdn web docs recommends it for accessibility.
+               -->
+                <strong><span aria-label="required">*</span></strong>
+                <span>Last Name:</span>
+              </label>
+              <input
+                type="text"
+                name="myLName"
+                id="myLName"
+                required="required"
+              />
+            </p>
+
+            <p>
+              <label for="myEmail">
+                <!-- I added an aria-label here per 
+                  https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form.
+                  The validator says it is possible misuse, but mdn web docs recommends it for accessibility.
+               -->
+                <strong><span aria-label="required">*</span></strong>
+                <span>E-mail:</span>
+              </label>
+              <input
+                type="email"
+                name="myEmail"
+                id="myEmail"
+                required="required"
+              />
+            </p>
+
+            <p>
+              <label for="myPhone">
+                <span>Phone:</span>
+              </label>
+              <input type="tel" name="myPhone" id="myPhone" />
+            </p>
+          </section>
+
+          <section>
+            <h4>Reservation information</h4>
+
+            <p>
+              <label for="myDate">
+                <span>Arrival Date:</span>
+              </label>
+              <input type="date" name="myDate" id="myDate" />
+            </p>
+
+            <p>
+              <label for="myNights">
+                <span>Nights:</span>
+              </label>
+              <input
+                type="number"
+                name="myNights"
+                id="myNights"
+                min="1"
+                max="14"
+              />
+            </p>
+          </section>
+
+          <!-- I added a section here per 
+            https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form.
+            The validator recommended not having a section without a header, so I've added
+            the header, even though it seems redundant.
+          -->
+          <section>
+            <h4>Your comments</h4>
+            <p>
+              <label for="myComments">
+                <!-- I added an aria-label here per 
+                  https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form.
+                  The validator says it is possible misuse, but mdn web docs recommends it for accessibility.
+                -->
+                <strong><span aria-label="required">*</span></strong>
+                <span>Comments:</span>
+              </label>
+              <textarea
+                name="myComments"
+                id="myComments"
+                rows="2"
+                cols="20"
+                required="required"
+              >
+              </textarea>
+            </p>
+          </section>
+
+          <!-- I added a section here per 
+            https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form.
+            The validator recommended not having a section without a header, so I've added
+            the header, even though it seems redundant.
+          -->
+          <section>
+            <h4>Submit your form</h4>
+            <p>
+              <button type="submit" id="mySubmit" value="Submit">Submit</button>
+            </p>
+          </section>
+        </form>
+      </main>
+
+      <footer>
+        Copyright © 2016 Pacific Trails Resort<br />
+        <a href="mailto:yourfirstname@yourlastname.com"
+          >yourfirstname@yourlastname.com</a
+        >
+      </footer>
+    </section>
+  </body>
+</html>
