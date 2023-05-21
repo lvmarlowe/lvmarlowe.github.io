@@ -35,9 +35,20 @@
       </nav>
     </div>
 
-    <p>Lost? Click the button to get your coordinates.</p>
+    <section>
+      <h2>Lost at Pacific Trails?</h2>
+      <ol>
+        <li>Click the button below to get your coordinates.</li>
+        <li>
+          Dial the Pacific Trails Resort search and rescue team at
+          1-800-867-5309.
+        </li>
+        <li>Relay your coordinates to the onsite rescue team.</li>
+        <li>Stay put.</li>
+      </ol>
+    </section>
 
-    <button onclick="getLocation()">Find me!</button>
+    <button class="lost__find-me" onclick="getLocation()">Find me!</button>
 
     <p id="demo"></p>
 
@@ -78,5 +89,13 @@
         }
       }
     </script>
+
+    <!--Prettier automatically formats longer lines to be broken up onto 
+        multiple lines by attribute when I save the file.-->
+    <img
+      id="lost__rescue-team"
+      src="./rescue team.png"
+      alt="Four men with a dog stand wearing rescue gear"
+    />
   </body>
 </html>

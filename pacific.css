@@ -1,0 +1,28 @@
+#lost__rescue-team {
+  object-fit: cover;
+  width: 100%;
+  max-height: 70vh;
+  object-position: top center;
+}
+
+.lost__find-me {
+  display: block;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 1.8rem;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: black;
+  background: #f96447;
+  cursor: pointer;
+  border: 3px solid black;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.lost__find-me:hover {
+  background: #fa320a;
+  color: black;
+}
