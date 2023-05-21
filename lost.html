@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--Prettier automatically formats longer lines to be broken up onto 
+        multiple lines by attribute when I save the file.-->
     <meta
       name="description"
       content="Helps lodgers if they get lost by showing them where they are"
@@ -38,55 +40,70 @@
     <section>
       <h2>Lost at Pacific Trails?</h2>
       <ol>
-        <li>Click the button below to get your coordinates.</li>
+        <li>Click the "FIND ME!" button below to get your coordinates.</li>
         <li>
           Dial the Pacific Trails Resort search and rescue team at
-          1-800-867-5309.
+          <a href="tel:18008675309" id="lost__call">1-800-867-5309</a>.
         </li>
         <li>Relay your coordinates to the onsite rescue team.</li>
         <li>Stay put.</li>
       </ol>
     </section>
 
-    <button class="lost__find-me" onclick="getLocation()">Find me!</button>
+    <button id="lost__find-me" onclick="getLocation()">Find me!</button>
 
-    <p id="demo"></p>
+    <strong><p id="lost__coordinates"></p></strong>
 
     <script>
-      var x = document.getElementById("demo");
+      var x = document.getElementById("lost__coordinates");
 
+      // Geolocation function
       function getLocation() {
+        // If brower supports geolocation,
         if (navigator.geolocation) {
+          // Get user's coordinates
           navigator.geolocation.getCurrentPosition(showPosition, showError);
+
+          // Otherwise, display unsupported messagae
         } else {
           x.innerHTML = "Geolocation is not supported by this browser.";
         }
-      }
+      } // End geolocation function
 
+      // Geolocation output to display user's coordinates
       function showPosition(position) {
-        x.innerHTML =
-          "Your location is:" +
+        Element.SetHTML() =
+          "Your coordinates are:" +
           "<br>Latitude: " +
           position.coords.latitude +
           "<br>Longitude: " +
           position.coords.longitude;
-      }
+      } // End geolocation output
 
+      // Geolocation error handling
       function showError(error) {
         switch (error.code) {
+          // Display message when user denies geolocation permission
           case error.PERMISSION_DENIED:
-            x.innerHTML = "You have blocked location services.";
+            x.innerHTML =
+              "You must allow location services to get your coordinates.";
             break;
+
+          // Display message when user's position is unavailable
           case error.POSITION_UNAVAILABLE:
             x.innerHTML = "Your location information is unavailable.";
             break;
+
+          // Display message when geolocation request times out
           case error.TIMEOUT:
             x.innerHTML = "Your request to get your location timed out.";
             break;
+
+          // Display message where unknown error occurs
           case error.UNKNOWN_ERROR:
             x.innerHTML = "An unknown error occurred.";
             break;
-        }
+        } // End geolocation error handling
       }
     </script>
 
@@ -94,7 +111,7 @@
         multiple lines by attribute when I save the file.-->
     <img
       id="lost__rescue-team"
-      src="./rescue team.png"
+      src="./rescue.png"
       alt="Four men with a dog stand wearing rescue gear"
     />
   </body>
