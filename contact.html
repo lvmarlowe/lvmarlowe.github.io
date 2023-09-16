@@ -1,0 +1,210 @@
+<!-- Doctype -->
+<!DOCTYPE html>
+
+<!-- HTML root -->
+<html class="no-js" lang="en">
+  <!-- Head -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Title -->
+    <title>Oddstrology: Contact Us</title>
+    <meta name="description" content="Contact Madame Fluffycorn" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Emilys Candy"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Itim"
+      rel="stylesheet"
+    />
+
+    <!-- Link to "styles.css" sheet  -->
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <!-- Body -->
+  <body id="contact__body">
+    <!-- Header -->
+    <header>
+      <!-- Naviation bar -->
+      <nav class="nav">
+        <input type="checkbox" id="nav__checkbox" class="nav__checkbox" />
+        <label for="nav__checkbox" class="nav__toggle">
+          <svg class="hamburger" viewBox="0 0 448 512" width="100">
+            <path
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            />
+          </svg>
+          <svg class="close" viewBox="0 0 384 512" width="100">
+            <path
+              d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+            />
+          </svg>
+        </label>
+        <ul class="nav__menu">
+          <li>
+            <a href="index.html">
+              <img id="logo" src="logo.png" alt="Logo with moon and stars" />
+              Oddstrology
+            </a>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="signs.html">Signs</a></li>
+          <li id="nav__this_page">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Replaced div with section -->
+      <section class="contact__hero">
+        <img
+          id="contact__image"
+          src="contact-background_high.png"
+          alt="A young woman and man hold hands under the starry night sky"
+        />
+      </section>
+
+      <section class="contact__header">
+        <h1 id="contact__header-1">Get</h1>
+        <h1 id="contact__header-2">your</h1>
+        <h1 id="contact__header-3">reading</h1>
+      </section>
+
+      <section class="contact__form">
+        <h2 class="contact__form-title">Request form</h2>
+
+        <!-- Form-->
+        <form action="#">
+          <section class="contact__main">
+            <section class="contact__info">
+              <label for="name">Full name: *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter full name"
+                required
+              />
+            </section>
+            <section class="contact__info">
+              <label for="email">Email: *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter email address"
+                required
+              />
+            </section>
+            <section class="contact__info">
+              <label for="phone">Phone number:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter phone number"
+                pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+              />
+            </section>
+            <section class="contact__info">
+              <label for="sign">Sign: *</label>
+              <select id="sign" name="sign" required>
+                <option></option>
+                <option value="Aries">Aries</option>
+                <option value="Taurus">Taurus</option>
+                <option value="Gemini">Gemini</option>
+                <option value="Cancer">Cancer</option>
+                <option value="Leo">Leo</option>
+                <option value="Virgo">Virgo</option>
+                <option value="Libra">Libra</option>
+                <option value="Scorpio">Scorpio</option>
+                <option value="Saggitarius">Saggitarius</option>
+                <option value="Capricorn">Capricorn</option>
+                <option value="Aquarius">Aquarius</option>
+                <option value="Pisces">Pisces</option>
+              </select>
+            </section>
+          </section>
+          <section class="contact__address">
+            <section class="contact__address">
+              <label for="street-address">Address: *</label>
+              <input
+                type="street-address"
+                id="street-address"
+                name="street-address"
+                placeholder="Enter street address"
+                autocomplete="street-address"
+                required
+              />
+            </section>
+            <section class="contact__address-area">
+              <label for="city">City: *</label>
+              <input
+                type="city"
+                id="city"
+                name="city"
+                placeholder="Enter city"
+                autocomplete="address-level2"
+                required
+              />
+            </section>
+            <section class="contact__address-area">
+              <label for="state">State: *</label>
+              <input
+                type="state"
+                id="state"
+                name="state"
+                placeholder="Enter state"
+                required
+              />
+            </section>
+            <section class="contact__address-area">
+              <label for="zip">Zip: *</label>
+              <input
+                type="zip"
+                id="zip"
+                name="zip"
+                placeholder="Enter zip"
+                required
+              />
+            </section>
+          </section>
+          <section class="contact__pronouns">
+            <span class="pronouns__title">Pronouns:</span>
+            <section class="pronouns__option">
+              <span>
+                <input type="radio" name="pronouns" id="they" />
+                <label for="they">they / them / their</label>
+              </span>
+              <span>
+                <input type="radio" name="pronouns" id="she" />
+                <label for="she">she / her / hers</label>
+              </span>
+              <span>
+                <input type="radio" name="pronouns" id="he" />
+                <label for="he">he / him / his</label>
+              </span>
+            </section>
+          </section>
+
+          <!-- Replaced div with button -->
+          <button class="contact__submit-button">
+            <input type="submit" value="Submit" />
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="contact__footer">
+      <p>Footer</p>
+    </footer>
+  </body>
+</html>
