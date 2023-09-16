@@ -46,18 +46,18 @@ h2 {
 h3 {
   font-family: "Itim", sans-serif;
   letter-spacing: 0.3rem;
-  color: #efef97;
+  color: #f6f69c;
   font-weight: 900;
   text-transform: uppercase;
 }
 
 /* Paragraph */
 p {
-  color: #eaeaea;
+  color: #fdfcfc;
   text-align: left;
   font-weight: 550;
   line-height: 1.2rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 /* Footer */
@@ -438,7 +438,7 @@ a {
   overflow: hidden;
   padding: 10px;
   min-width: 100%;
-  min-height: 300px;
+  min-height: 40vh;
   text-align: center;
 }
 
@@ -563,9 +563,9 @@ a {
   width: 100%;
   height: 200%;
   pointer-events: none;
-  transition: all 0.5s ease;
+  transition: all 0.75s ease;
   transform: translateY(50%);
-  background-image: linear-gradient(to top, #000000 0, #00000000 75%);
+  background-image: linear-gradient(to top, #000000 0, #00000000 70%);
 }
 
 .signs__sign:hover .signs__info {
