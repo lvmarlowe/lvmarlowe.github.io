@@ -475,7 +475,7 @@ a {
 }
 
 .signs__sign:nth-child(9):before {
-  background-image: url(signs-saggitarius_low.png);
+  background-image: url(signs-sagittarius_low.png);
 }
 
 .signs__sign:nth-child(10):before {
@@ -524,7 +524,7 @@ a {
   }
 
   .signs__sign:nth-child(9):before {
-    background-image: url(signs-saggitarius_high.png);
+    background-image: url(signs-sagittarius_high.png);
   }
 
   .signs__sign:nth-child(10):before {
