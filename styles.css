@@ -787,12 +787,13 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .contact__submit-button {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  width: 500px;
+  width: 40%;
   text-align: center;
   font-family: "Itim", sans-serif;
   font-weight: 700;
@@ -840,5 +841,9 @@ a {
     gap: 1rem;
     justify-content: space-between;
     width: 100%;
+  }
+
+  .contact__submit-button {
+    width: 60%;
   }
 }
