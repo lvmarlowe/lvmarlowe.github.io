@@ -264,6 +264,10 @@ a {
   line-height: 1.5rem;
 }
 
+.about__name {
+  border-radius: 15px;
+}
+
 .about {
   display: grid;
   grid-gap: 1rem;
@@ -293,6 +297,7 @@ a {
   min-height: 300px;
   max-height: 90vh;
   text-align: center;
+  border-radius: 15px;
 }
 
 .about__team:nth-child(1):before {
@@ -391,7 +396,11 @@ a {
   font-size: 5rem;
 }
 
-#signs__date {
+.sign__name {
+  border-radius: 15px;
+}
+
+.signs__date {
   text-align: center;
   font-size: 1.1rem;
   line-height: 0.9rem;
@@ -443,6 +452,7 @@ a {
   min-width: 100%;
   min-height: 40vh;
   text-align: center;
+  border-radius: 15px;
 }
 
 .signs__sign:nth-child(1):before {
@@ -633,8 +643,8 @@ a {
   background: rgb(31, 31, 31);
   padding: 28px;
   margin: 12rem auto;
-  border-radius: 10px;
-  box-shadow: inset -1px 1px 1px #93958a;
+  border-radius: 15px;
+  box-shadow: inset -1px 1px 10px rgb(147, 149, 138, 0.15);
 }
 
 .contact__form-title {
@@ -769,33 +779,37 @@ a {
 
 .pronouns__option label,
 .pronouns__option input,
-.contact__submit-button input {
+.contact__submit-button {
   cursor: pointer;
+}
+
+.contact__center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact__submit-button {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  width: 100%;
-}
-
-.contact__submit-button input {
-  display: block;
+  width: 30%;
+  text-align: center;
   font-family: "Itim", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  width: 100%;
   font-size: 1.8rem;
   padding: 10px;
   border: none;
-  border-radius: 3px;
+  border-radius: 15px;
   color: black;
-  background: #d47b7b;
+  background: #be5555;
+  box-shadow: inset -1px 3px 7px rgba(210, 136, 136, 1);
 }
 
-.contact__submit-button input:hover {
-  background: #be5555;
-  color: black;
+.contact__submit-button:hover {
+  transition: 0.1s ease-in-out;
+  background: #ab4d4d;
+  box-shadow: inset -1px 3px 7px rgba(133, 59, 59, 1);
 }
 
 @media (max-width: 768px) {
