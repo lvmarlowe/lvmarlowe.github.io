@@ -792,7 +792,7 @@ a {
 .contact__submit-button {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  width: 60%;
+  min-width: 200px;
   text-align: center;
   font-family: "Itim", sans-serif;
   font-weight: 700;
