@@ -402,37 +402,16 @@ a {
   line-height: 0.9rem;
 }
 
-.signs {
-  display: grid;
-  grid-gap: 1rem;
-  padding: 10px;
-  width: 100%;
-  grid-template-columns: repeat(1, 1fr);
+.signs__container {
   margin-top: 18rem;
-}
-
-@media only screen and (min-width: 700px) and (max-width: 1200px) {
-  .signs {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
-  .signs {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media only screen and (min-width: 1500px) and (max-width: 1700px) {
-  .signs {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media only screen and (min-width: 1700px) {
-  .signs {
-    grid-template-columns: repeat(6, 1fr);
-  }
+  max-width: 90%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .signs__sign {
@@ -443,59 +422,60 @@ a {
   display: -webkit-flex;
   display: flex;
   align-items: flex-end;
+  height: 550px;
+  justify-content: center;
+  gap: 2rem;
   overflow: hidden;
   padding: 10px;
-  min-width: 100%;
-  min-height: 40vh;
   text-align: center;
   border-radius: 15px;
 }
 
-.signs__sign:nth-child(1):before {
+#aries:before {
   background-image: url(signs-aries_low.png);
 }
 
-.signs__sign:nth-child(2):before {
+#taurus:before {
   background-image: url(signs-taurus_low.png);
 }
 
-.signs__sign:nth-child(3):before {
+#gemini:before {
   background-image: url(signs-gemini_low.png);
 }
 
-.signs__sign:nth-child(4):before {
+#cancer:before {
   background-image: url(signs-cancer_low.png);
 }
 
-.signs__sign:nth-child(5):before {
+#leo:before {
   background-image: url(signs-leo_low.png);
 }
 
-.signs__sign:nth-child(6):before {
+#virgo:before {
   background-image: url(signs-virgo_low.png);
 }
 
-.signs__sign:nth-child(7):before {
+#libra:before {
   background-image: url(signs-libra_low.png);
 }
 
-.signs__sign:nth-child(8):before {
+#scorpio:before {
   background-image: url(signs-scorpio_low.png);
 }
 
-.signs__sign:nth-child(9):before {
+#sagittarius:before {
   background-image: url(signs-sagittarius_low.png);
 }
 
-.signs__sign:nth-child(10):before {
+#capricorn:before {
   background-image: url(signs-capricorn_low.png);
 }
 
-.signs__sign:nth-child(11):before {
+#aquarius:before {
   background-image: url(signs-aquarius_low.png);
 }
 
-.signs__sign:nth-child(12):before {
+#pisces:before {
   background-image: url(signs-pisces_low.png);
 }
 
