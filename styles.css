@@ -56,9 +56,9 @@ h3 {
 p {
   color: #fdfcfc;
   text-align: left;
-  font-weight: 550;
-  line-height: 1.5rem;
-  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  font-size: 1.25rem;
   text-shadow: 0 5px 10px #000000;
 }
 
@@ -404,7 +404,9 @@ a {
 
 .signs__container {
   margin-top: 18rem;
-  max-width: 90%;
+  margin-bottom: 4rem;
+  width: 100%;
+  padding: 2.5rem 3rem;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -422,13 +424,19 @@ a {
   display: -webkit-flex;
   display: flex;
   align-items: flex-end;
-  height: 550px;
+  height: 600px;
   justify-content: center;
-  gap: 2rem;
   overflow: hidden;
-  padding: 10px;
+  padding: 0.75rem;
   text-align: center;
   border-radius: 15px;
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  .signs__sign {
+    height: 90%;
+    width: 100%;
+  }
 }
 
 #aries:before {
@@ -583,9 +591,59 @@ a {
   flex-direction: column;
   align-items: justify;
   width: 100%;
+  padding: 1rem;
   transition: transform 500ms ease;
   z-index: 2;
-  transform: translateY(calc(100% - 2rem));
+  transform: translateY(calc(100% - 3rem));
+}
+
+.signs__button-next,
+.signs__button-previous {
+  color: #f6f69c;
+  font-weight: 900;
+  background-color: #75776d;
+  padding: 2.5rem;
+  border-radius: 50%;
+  transform: scale(0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signs__button-next {
+  margin-right: -0.5rem;
+  background-image: linear-gradient(to right, #000000 0, #00000000 250%);
+  box-shadow: -8px 0px 12px rgba(250, 250, 250, 0.25);
+}
+
+.signs__button-previous {
+  margin-left: -0.5rem;
+  background-image: linear-gradient(to left, #000000 0, #00000000 250%);
+  box-shadow: 8px 0px 12px rgba(250, 250, 250, 0.25);
+}
+
+.signs__button-next:hover,
+.signs__button-previous:hover {
+  transform: scale(0.7);
+  transition: 300ms ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .signs__button-next,
+  .signs__button-previous {
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  background-color: #eaeaea;
+  background-image: linear-gradient(to left, #000000 0, #00000000 150%);
+  box-shadow: 8px 0px 12px rgba(250, 250, 250, 0.25);
+}
+.swiper-pagination-bullet-active {
+  background-image: none;
+  background-color: #eaeaea;
 }
 
 /* Contact page */
