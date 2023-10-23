@@ -628,12 +628,12 @@ a {
   transition: 300ms ease-in-out;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .signs__button-next,
   .signs__button-previous {
     display: none;
   }
-}
+} */
 
 .swiper-pagination-bullet {
   opacity: 1;
