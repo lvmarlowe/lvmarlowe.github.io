@@ -406,7 +406,7 @@ a {
   margin-top: 18rem;
   margin-bottom: 4rem;
   width: 100%;
-  padding: 2.5rem 3rem;
+  padding: 3rem 3rem;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -488,51 +488,51 @@ a {
 }
 
 @media screen and (min-width: 1000px) {
-  .signs__sign:nth-child(1):before {
+  #aries:before {
     background-image: url(signs-aries_high.png);
   }
 
-  .signs__sign:nth-child(2):before {
+  #taurus:before {
     background-image: url(signs-taurus_high.png);
   }
 
-  .signs__sign:nth-child(3):before {
+  #gemini:before {
     background-image: url(signs-gemini_high.png);
   }
 
-  .signs__sign:nth-child(4):before {
+  #cancer:before {
     background-image: url(signs-cancer_high.png);
   }
 
-  .signs__sign:nth-child(5):before {
+  #leo:before {
     background-image: url(signs-leo_high.png);
   }
 
-  .signs__sign:nth-child(6):before {
+  #virgo:before {
     background-image: url(signs-virgo_high.png);
   }
 
-  .signs__sign:nth-child(7):before {
+  #libra:before {
     background-image: url(signs-libra_high.png);
   }
 
-  .signs__sign:nth-child(8):before {
+  #scorpio:before {
     background-image: url(signs-scorpio_high.png);
   }
 
-  .signs__sign:nth-child(9):before {
+  #sagittarius:before {
     background-image: url(signs-sagittarius_high.png);
   }
 
-  .signs__sign:nth-child(10):before {
+  #capricorn:before {
     background-image: url(signs-capricorn_high.png);
   }
 
-  .signs__sign:nth-child(11):before {
+  #aquarius:before {
     background-image: url(signs-aquarius_high.png);
   }
 
-  .signs__sign:nth-child(12):before {
+  #pisces:before {
     background-image: url(signs-pisces_high.png);
   }
 }
