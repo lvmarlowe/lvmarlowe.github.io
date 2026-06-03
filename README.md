@@ -5,7 +5,7 @@
 
 # Oddstrology
 
-Responsive front-end website that presents whimsical fictional zodiac profile through custom page layouts, interactive navigation, responsive images, and a mobile-friendly sign carousel.
+Responsive front-end website for a whimsical astrology-business parody, featuring custom page layouts, interactive navigation, responsive images, and a mobile-friendly sign carousel.
 
 ---
 
