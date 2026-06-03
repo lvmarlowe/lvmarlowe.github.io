@@ -55,7 +55,7 @@ This project was originally created for a web development course focused on buil
 
 ## Image Notice
 
-The course requirements limited image use to original or AI-generated images. Stock images, royalty-free images, and other third-party image assets were not permitted for the assignment. I used AI-generated images created with Midjourney to meet the visual requirements while keeping the artwork aligned with the fictional concept of the site. I am currently revising the project and replacing the AI-generated images with licensed stock images or original illustrations where appropriate. Any replacement images will be reviewed for licensing requirements, attribution expectations, and long-term portfolio use.
+The course requirements limited image use to original or AI-generated images. Stock images, royalty-free images, and other third-party image assets were not permitted for the assignment. I used AI-generated images created with Midjourney to meet these visual requirements. I am currently revising the project and replacing the AI-generated images with licensed stock images. Any replacement images will be reviewed for licensing requirements, attribution expectations, and long-term portfolio use.
 
 ---
 
