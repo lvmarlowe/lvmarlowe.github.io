@@ -22,6 +22,7 @@ body {
 .signs__hero,
 .contact__hero {
   position: relative;
+  overflow: hidden;
 }
 
 /* home__hero::after */
@@ -31,12 +32,13 @@ body {
   content: "";
   position: absolute;
   inset: 0;
+  z-index: 1;
   pointer-events: none;
   background: linear-gradient(
     to top,
     rgba(0, 0, 0, 1) 0%,
     rgba(0, 0, 0, 0.75) 25%,
-    rgba(0, 0, 0, 0.55) 55%,
+    rgba(0, 0, 0, 0.50) 45%,
     rgba(0, 0, 0, 0) 100%
   );
 }
@@ -46,6 +48,8 @@ body {
 .signs__hero img,
 .contact__hero img {
   display: block;
+  position:relative;
+  z-index:0;
 }
 
 /* Headers */
