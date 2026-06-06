@@ -358,7 +358,7 @@ a {
   object-fit: cover;
   width: 100%;
   max-height: 60vh;
-  object-position: bottom center;
+  object-position: center center;
 }
 
 #signs__header-1 {
