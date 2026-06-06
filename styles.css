@@ -768,4 +768,29 @@ a {
     justify-content: space-between;
     width: 100%;
   }
-}
+
+  /* All pages */
+  /* home__hero */
+  .about__hero,
+  .signs__hero,
+  .contact__hero {
+    position: relative
+  }
+
+    /* home__hero::after */
+  .about__hero::after,
+  .signs__hero::after,
+  .contact__hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.35);
+  }
+
+    /* home__hero img */
+  .about__hero img,
+  .signs__hero img,
+  .contact__hero img {
+    display: block;
+  }
