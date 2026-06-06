@@ -417,101 +417,51 @@ a {
 }
 
 #aries:before {
-  background-image: url(signs-aries_low.png);
+  background-image: url(signs-aries.png);
 }
 
 #taurus:before {
-  background-image: url(signs-taurus_low.png);
+  background-image: url(signs-taurus.png);
 }
 
 #gemini:before {
-  background-image: url(signs-gemini_low.png);
+  background-image: url(signs-gemini.png);
 }
 
 #cancer:before {
-  background-image: url(signs-cancer_low.png);
+  background-image: url(signs-cancer.png);
 }
 
 #leo:before {
-  background-image: url(signs-leo_low.png);
+  background-image: url(signs-leo.png);
 }
 
 #virgo:before {
-  background-image: url(signs-virgo_low.png);
+  background-image: url(signs-virgo.png);
 }
 
 #libra:before {
-  background-image: url(signs-libra_low.png);
+  background-image: url(signs-libra.png);
 }
 
 #scorpio:before {
-  background-image: url(signs-scorpio_low.png);
+  background-image: url(signs-scorpio.png);
 }
 
 #sagittarius:before {
-  background-image: url(signs-sagittarius_low.png);
+  background-image: url(signs-sagittarius.png);
 }
 
 #capricorn:before {
-  background-image: url(signs-capricorn_low.png);
+  background-image: url(signs-capricorn.png);
 }
 
 #aquarius:before {
-  background-image: url(signs-aquarius_low.png);
+  background-image: url(signs-aquarius.png);
 }
 
 #pisces:before {
-  background-image: url(signs-pisces_low.png);
-}
-
-@media screen and (min-width: 1000px) {
-  #aries:before {
-    background-image: url(signs-aries_high.png);
-  }
-
-  #taurus:before {
-    background-image: url(signs-taurus_high.png);
-  }
-
-  #gemini:before {
-    background-image: url(signs-gemini_high.png);
-  }
-
-  #cancer:before {
-    background-image: url(signs-cancer_high.png);
-  }
-
-  #leo:before {
-    background-image: url(signs-leo_high.png);
-  }
-
-  #virgo:before {
-    background-image: url(signs-virgo_high.png);
-  }
-
-  #libra:before {
-    background-image: url(signs-libra_high.png);
-  }
-
-  #scorpio:before {
-    background-image: url(signs-scorpio_high.png);
-  }
-
-  #sagittarius:before {
-    background-image: url(signs-sagittarius_high.png);
-  }
-
-  #capricorn:before {
-    background-image: url(signs-capricorn_high.png);
-  }
-
-  #aquarius:before {
-    background-image: url(signs-aquarius_high.png);
-  }
-
-  #pisces:before {
-    background-image: url(signs-pisces_high.png);
-  }
+  background-image: url(signs-pisces.png);
 }
 
 .signs__sign:before {
