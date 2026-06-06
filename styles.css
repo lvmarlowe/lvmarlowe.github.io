@@ -87,10 +87,6 @@ nav {
 }
 
 .nav__menu {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -158,7 +154,7 @@ li {
 }
 
 .nav__menu li:first-child {
-  font-family: "Emilys Candy", sans serif;
+  font-family: "Emilys Candy", sans-serif;
   font-weight: 400;
   margin-right: auto;
   display: block;
@@ -282,10 +278,6 @@ a {
 
 .about__team {
   position: relative;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -333,12 +325,8 @@ a {
   height: 200%;
   pointer-events: none;
   transition: all 500ms ease;
-  transform: translateY(-50%);
-  background-image: linear-gradient(to top, #000000 0%, #00000000 65%);
-}
-
-.about__team:after {
   transform: translateY(0);
+  background-image: linear-gradient(to top, #000000 0%, #00000000 65%);
 }
 
 .about__team:hover:before {
@@ -355,13 +343,9 @@ a {
 
 .about__info {
   position: relative;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   flex-direction: column;
-  align-items: justify;
+  align-items: center;
   width: 100%;
   padding: 5px;
   transition: transform 500ms ease;
@@ -408,10 +392,6 @@ a {
   margin-bottom: 4rem;
   width: 100%;
   padding: 3rem 3rem;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -419,10 +399,6 @@ a {
 
 .signs__sign {
   position: relative;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   align-items: flex-end;
   height: 600px;
@@ -562,15 +538,11 @@ a {
   height: 200%;
   pointer-events: none;
   transition: all 500ms ease;
-  transform: translateY(50%);
+  transform: translateY(0);
   background-image: linear-gradient(to top, #000000 0, #00000000 70%);
 }
 
 .signs__sign:hover .signs__info {
-  transform: translateY(0);
-}
-
-.signs__sign:after {
   transform: translateY(0);
 }
 
@@ -584,13 +556,9 @@ a {
 
 .signs__info {
   position: relative;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   flex-direction: column;
-  align-items: justify;
+  align-items: center;
   width: 100%;
   padding: 1rem;
   transition: transform 500ms ease;
@@ -719,28 +687,22 @@ a {
   padding-bottom: 16px;
 }
 
-.contact__info label {
+.contact__info label,
+.contact__address label,
+.contact__address-area label,
+.pronouns__title {
   width: 95%;
   font-family: "Itim", sans-serif;
-  letter-spacing: 0.15rem;
   color: #dada8b;
   font-weight: 700;
   font-size: 1.25rem;
   text-transform: uppercase;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
 }
 
-.contact__info input {
-  height: 2.25rem;
-  width: 95%;
-  border-radius: 7px;
-  outline: none;
-  border: 1px solid #75776d;
-  padding: 0 10px;
-}
-
-.contact__info select {
+.contact__info input,
+.contact__info select,
+.contact__address input,
+.contact__address-area input {
   height: 2.25rem;
   width: 95%;
   border-radius: 7px;
@@ -752,30 +714,24 @@ a {
 .contact__address {
   display: flex;
   flex-wrap: wrap;
-
   width: 100%;
   padding-bottom: 16px;
 }
 
+.contact__info label,
 .contact__address label {
-  width: 95%;
-  font-family: "Itim", sans-serif;
   letter-spacing: 0.15rem;
-  color: #dada8b;
-  font-weight: 700;
-  font-size: 1.25rem;
-  text-transform: uppercase;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
-.contact__address input {
-  height: 2.25rem;
-  width: 95%;
-  border-radius: 7px;
-  outline: none;
-  border: 1px solid #75776d;
-  padding: 0 10px;
+.contact__address-area label,
+.pronouns__title {
+  letter-spacing: 0.2rem;
+}
+
+.pronouns__title {
+  margin-top: 2rem;
 }
 
 .contact__address-area {
@@ -783,36 +739,6 @@ a {
   flex-wrap: wrap;
   width: 33%;
   padding-bottom: 16px;
-}
-
-.contact__address-area label {
-  width: 95%;
-  font-family: "Itim", sans-serif;
-  letter-spacing: 0.2rem;
-  color: #dada8b;
-  font-weight: 700;
-  font-size: 1.25rem;
-  text-transform: uppercase;
-}
-
-.contact__address-area input {
-  height: 2.25rem;
-  width: 95%;
-  border-radius: 7px;
-  outline: none;
-  border: 1px solid #75776d;
-  padding: 0 10px;
-}
-
-.pronouns__title {
-  width: 95%;
-  font-family: "Itim", sans-serif;
-  letter-spacing: 0.2rem;
-  color: #dada8b;
-  font-weight: 700;
-  font-size: 1.25rem;
-  text-transform: uppercase;
-  margin-top: 2rem;
 }
 
 .pronouns__option {
