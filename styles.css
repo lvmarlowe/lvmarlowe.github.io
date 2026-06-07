@@ -614,13 +614,13 @@ a {
 
 .swiper-pagination-bullet {
   opacity: 1;
-  background-color: #cbb7ff;
+  background-color: #eaeaea;
   background-image: linear-gradient(to left, #000000 0, #00000000 150%);
   box-shadow: 8px 0px 12px rgba(250, 250, 250, 0.25);
 }
 .swiper-pagination-bullet-active {
   background-image: none;
-  background-color: #edf77b;
+  background-color: #eaeaea;
 }
 
 /* Contact page */
