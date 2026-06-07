@@ -17,38 +17,55 @@ body {
 }
 
 /* Hero images */
-/* home__hero */
+.home__hero,
 .about__hero,
 .signs__hero,
 .contact__hero {
   position: relative;
+  width: 100%;
+  height: 45vh;
+  max-height: 420px;
+  min-height: 260px;
   overflow: hidden;
+  background: #000000;
 }
 
-/* home__hero::after */
+.home__hero::after,
 .about__hero::after,
 .signs__hero::after,
 .contact__hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 1;
   pointer-events: none;
   background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.50) 50%,
-    rgba(0, 0, 0, 0) 100%
+    to bottom,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0.45) 55%,
+    rgba(0, 0, 0, 1) 100%
   );
 }
 
-/* home__hero img */
+.home__hero img,
 .about__hero img,
 .signs__hero img,
 .contact__hero img {
   display: block;
-  position:relative;
-  z-index:0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+#home__image,
+#about__image,
+#signs__image,
+#contact__image {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  object-position: center center;
 }
 
 /* Headers */
@@ -243,13 +260,6 @@ a {
 }
 
 /* Home page */
-#home__image {
-  object-fit: cover;
-  width: 100%;
-  max-height: 60vh;
-  object-position: center center;
-}
-
 #home__header-1 {
   font-size: 3.5rem;
   margin: 3rem auto;
@@ -276,13 +286,6 @@ a {
 }
 
 /* About page */
-#about__image {
-  object-fit: cover;
-  width: 100%;
-  max-height: 60vh;
-  object-position: center center;
-}
-
 #about__header-1 {
   font-size: 5rem;
   margin: 3rem auto;
@@ -315,7 +318,7 @@ a {
   padding: 10px;
   width: 100%;
   grid-template-rows: repeat(3, 1fr);
-  margin-top: 16rem;
+  margin-top: 6rem;
 }
 
 @media only screen and (min-width: 900px) {
@@ -402,13 +405,6 @@ a {
 }
 
 /* Signs page */
-#signs__image {
-  object-fit: cover;
-  width: 100%;
-  max-height: 60vh;
-  object-position: center center;
-}
-
 #signs__header-1 {
   font-size: 5rem;
   margin: 3rem auto;
@@ -436,7 +432,7 @@ a {
 }
 
 .signs__container {
-  margin-top: 18rem;
+  margin-top: 6rem;
   margin-bottom: 4rem;
   width: 100%;
   padding: 3rem 3rem;
@@ -628,13 +624,6 @@ a {
 }
 
 /* Contact page */
-#contact__image {
-  object-fit: cover;
-  width: 100%;
-  max-height: 60vh;
-  object-position: center center;
-}
-
 #contact__header-1 {
   font-size: 5rem;
   margin: 2rem -1.5rem;
@@ -656,7 +645,7 @@ a {
   max-width: 650px;
   background: rgb(31, 31, 31);
   padding: 28px;
-  margin: 16rem auto;
+  margin: 6rem auto;
   border-radius: 15px;
   box-shadow: inset -1px 1px 10px rgb(147, 149, 138, 0.15);
 }
