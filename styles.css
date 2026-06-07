@@ -17,38 +17,53 @@ body {
 }
 
 /* Hero images */
-/* home__hero */
+.home__hero,
 .about__hero,
 .signs__hero,
 .contact__hero {
   position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 45vh;
+  max-height: 420px;
+  min-height: 260px;
   overflow: hidden;
+  background: #000000;
 }
 
-/* home__hero::after */
+.home__hero::after,
 .about__hero::after,
 .signs__hero::after,
 .contact__hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 0;
   pointer-events: none;
   background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.50) 50%,
-    rgba(0, 0, 0, 0) 100%
+    to bottom,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0.45) 55%,
+    rgba(0, 0, 0, 1) 100%
   );
 }
 
-/* home__hero img */
+.home__hero img,
 .about__hero img,
 .signs__hero img,
-.contact__hero img {
+.contact__hero img
+#home__image,
+#about__image,
+#signs__image,
+#contact__image {
+  position: relative;
+  z-index: 0;
   display: block;
-  position:relative;
-  z-index:0;
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  object-position: center center;
 }
 
 /* Headers */
