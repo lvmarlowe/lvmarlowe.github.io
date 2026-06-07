@@ -51,7 +51,7 @@ body {
 .home__hero img,
 .about__hero img,
 .signs__hero img,
-.contact__hero img
+.contact__hero img,
 #home__image,
 #about__image,
 #signs__image,
@@ -765,14 +765,14 @@ a {
   border: none;
   border-radius: 100px;
   color: #000000;
-  background: #edf77b;
-  box-shadow: inset -1px 3px 7px rgba(210, 136, 136, 1);
+  background: #f796d9;
+  box-shadow: inset -1px 3px 7px rgba(255, 224, 242, 0.75);
 }
 
 .contact__submit-button:hover {
   transition: 200ms ease-in-out;
-  background: #dfe96f;
-  box-shadow: inset -1px 3px 7px rgba(133, 59, 59, 1);
+  background: #e87ac9;
+  box-shadow: inset -1px 3px 7px rgba(87, 68, 147, 0.35);
 }
 
 @media (max-width: 768px) {
