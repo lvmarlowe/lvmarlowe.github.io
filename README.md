@@ -53,15 +53,15 @@ This project was originally created for a web development course focused on buil
 
 ---
 
-## Image Notice
+## Image Credits
 
-The course requirements limited image use to original or AI-generated images. Stock images, royalty-free images, and other third-party image assets were not permitted for the assignment. I used AI-generated images created with Midjourney to meet these visual requirements. I am currently revising the project and replacing the AI-generated images with licensed stock images. Any replacement images will be reviewed for licensing requirements, attribution expectations, and long-term portfolio use.
+Most images used in this project have been replaced with licensed third-party images, with credits included in the site footer. One original Midjourney-generated home page image remains temporarily while I update the responsive image sizing for that page.
 
 ---
 
 ## Why I Made This
 
-Oddstrology began as a way to make a basic class website feel more fun, memorable, and visually distinctive. I was inspired by the funny, weird tone of *Affirmators!* affirmation cards and wanted to apply that kind of playful approach to my project without overlapping in content or format. Rather than treating the signs as serious predictions or spiritual guidance, the site uses astrology as a familiar structure for humor and front-end development practice.
+Oddstrology began as a way to make a basic website for a beginner class feel more fun, memorable, and visually distinctive. I was inspired by the funny, weird tone of *Affirmators!* affirmation cards and wanted to apply that kind of playful approach to my project without overlapping in content or format. Rather than treating the signs as serious predictions or spiritual guidance, the site uses astrology as a familiar structure for humor and front-end development practice.
 
 ---
 
