@@ -258,6 +258,13 @@ a {
 }
 
 /* Home page */
+#home__image {
+  object-fit: cover;
+  width: 100%;
+  max-height: 60vh;
+  object-position: center center;
+}
+
 #home__header-1 {
   font-size: 3.5rem;
   margin: 3rem auto;
