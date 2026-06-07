@@ -17,7 +17,7 @@ body {
 }
 
 /* Hero images */
-.home__hero,
+/* .home__hero, */
 .about__hero,
 .signs__hero,
 .contact__hero {
@@ -31,7 +31,7 @@ body {
   background: #000000;
 }
 
-.home__hero::after,
+/* .home__hero::after, */
 .about__hero::after,
 .signs__hero::after,
 .contact__hero::after {
@@ -48,11 +48,11 @@ body {
   );
 }
 
-.home__hero img,
+/* .home__hero img, */
 .about__hero img,
 .signs__hero img,
 .contact__hero img,
-#home__image,
+/* #home__image, */
 #about__image,
 #signs__image,
 #contact__image {
