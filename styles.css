@@ -128,9 +128,6 @@ footer {
   border-top: 1px solid #75776d;
   background: black;
   color: #eaeaea;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 footer p {
