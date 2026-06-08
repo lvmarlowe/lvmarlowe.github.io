@@ -131,7 +131,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: auto;
 }
 
 footer p {
@@ -269,13 +268,10 @@ a {
   border-bottom: 3px solid #f796d9;
 }
 
-/* Home page */
-/* #home__image {
-  object-fit: cover;
-  width: 100%;
-  max-height: 60vh;
-  object-position: center center;
-} */
+.home__header {
+  position: relative;
+  min-height: 16rem;
+}
 
 #home__header-1 {
   font-size: 3.5rem;
