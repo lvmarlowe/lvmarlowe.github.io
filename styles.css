@@ -31,6 +31,12 @@ body {
   background: #000000;
 }
 
+.home__hero picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .home__hero::after,
 .about__hero::after,
 .signs__hero::after,
