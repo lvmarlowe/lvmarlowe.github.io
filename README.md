@@ -55,7 +55,7 @@ This project was originally created for a web development course focused on buil
 
 ## Image Credits
 
-Most images used in this project have been replaced with licensed third-party images, with credits included in the site footer. One original Midjourney-generated home page image remains temporarily while I update the responsive image sizing for that page.
+The images used in this project are licensed third-party images selected with care to support human creators and avoid AI-generated content. If you notice an image that does not align with this intent, please contact me so I can correct it. Image credits are included in the site footer.
 
 ---
 
